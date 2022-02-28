@@ -1,10 +1,8 @@
 export const sassVar = {
-    primaryColor: '#050507',
-    secondaryColor:'#FFF',
-    // tertiaryColor:'#9CA1B3'
-    // tertiaryColor:'#CFD1DA'
-    grayColor:'#B4C0C1',
-    tertiaryColor:'#855723',
-    // tertiaryColor:'#9593A4'
+    primaryColor: '#30363E',
+    secondaryColor:'#25292F',
+    tertiaryColor:'#05B6D4',
+    darkColor:'#1A1D21',
+    textColor:'#FFF',
 };
 
