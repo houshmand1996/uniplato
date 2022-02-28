@@ -1,6 +1,9 @@
-import { createGlobalStyle , css } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import { sassVar } from 'core/sass-var';
 
-const animations = css `
+const { primaryColor } = sassVar;
+
+const animations = css`
 	 @keyframes clickBottom {
 		0%   {transform:scale(1)}
 		45%  {transform:scale(0.95)}
@@ -13,6 +16,7 @@ const animations = css `
 
 export const GlobalStyle = createGlobalStyle`
 	body {
+		background-color: ${primaryColor}; 
 		font-family: 'Overlock', cursive;
 		overflow-x: hidden;
 		padding: 20px 80px;
@@ -25,35 +29,11 @@ export const GlobalStyle = createGlobalStyle`
 
 	${animations}
 
-	button,
-	.loadmore-list
-	{
+	button	{
 		cursor: url(/cursor.png) 39 39, auto !important;
 	}
 
-	.animateHolder{
-		width: calc(100% - 160px);
-		@media screen and (max-width: 800px) {
-			/* padding: 10px; */
-			width: calc(100% - 20px);
-		}
-		position: absolute;
-		
-	}
 
-	.list {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: all 3s;
-  cursor: url(/cursor.png) 39 39, auto !important;
-}
-	a {
-		text-decoration: none;
-		color: black;
-	}
 
-	* {
-		box-sizing: border-box;
-	}
+
 `;

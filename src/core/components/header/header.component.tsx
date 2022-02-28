@@ -1,10 +1,15 @@
-import { HeaderContainer, LogoContainer , Logo } from './header.styles';
-
+import { Anchor } from 'antd';
+import { HeaderContainer, LogoContainer, Logo } from './header.styles';
+import LogoImg from 'core/assets/logo.svg';
 export const Header = () => (
-    <HeaderContainer>
-      <LogoContainer >
-        <Logo className="logo" />
-      </LogoContainer>
-    </HeaderContainer>
-  );
+  <HeaderContainer>
+    <LogoContainer >
+      <Anchor>
+        <Logo href='#' title="Home" >
+          <img src={LogoImg} alt="logo" />
+        </Logo>
+      </Anchor>
+    </LogoContainer>
+  </HeaderContainer>
+);
 
