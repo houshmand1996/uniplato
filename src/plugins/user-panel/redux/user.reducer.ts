@@ -7,7 +7,7 @@ interface UserState {
 
 const INITIAL_STATE: UserState = {
     users: [
-        { id: 1, position: { x: 0, y: 0 } },
+        // { id: 1, position: { x: 0, y: 0 } , height: 800, width: 300 },
     ],
     maxUsers: 12,
 };
@@ -25,10 +25,8 @@ export const userReducer = (state = INITIAL_STATE, action: UserActions): UserSta
 const addUserToState = (state: UserState, action: AddUser): UserState => {
     if(!action.payload) return state;
     const { users } = state;
-    const { payload } = action;
-    const { id, position } = payload;
     const newUsers: User[] = [...users];
-    if (newUsers.length < state.maxUsers)  newUsers.push({ id, position });
+    if (newUsers.length < state.maxUsers)  newUsers.push(action.payload);
     return {
         ...state,
         users: newUsers,

@@ -1,17 +1,16 @@
 import styled from 'styled-components';
-import { sassVar } from 'core/sass-var';
-const  tertiaryColor  = sassVar?.tertiaryColor;
 export const UserListContainer = styled.div`
-  width: 70%;
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-  /* align-content: space-between; */
-  flex-wrap: wrap;
-  /* background-color: ${tertiaryColor}; */
-  @media screen and (max-width: 800px) {
-    /* height: 60px; */
-    padding: 10px;
-    /* margin-bottom: 20px; */
-  }
+    width: 70%;
+    height: 820px;
+    position: relative;
+    overflow: hidden !important;
+    @media (max-width: 768px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    div{
+      position: absolute;
+      will-change: transform, width, height, opacity;
+      margin: 0 15px;
+    }
 `;

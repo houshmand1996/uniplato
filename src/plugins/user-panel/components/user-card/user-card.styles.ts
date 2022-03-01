@@ -1,18 +1,21 @@
 import styled from 'styled-components';
 import { sassVar } from 'core/sass-var';
-import { Button   , Tag} from 'antd';
-const  secondaryColor  = sassVar?.secondaryColor;
-const  darkColor  = sassVar?.darkColor;
+import { Button, Tag } from 'antd';
+const secondaryColor = sassVar?.secondaryColor;
+const darkColor = sassVar?.darkColor;
 
 export const UserCardContainer = styled.div`
-    width: 300px;
-    height: 200px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
     border-radius: 5px;
     padding: 5px;
+    /* margin: 5px; */
     display: flex;
-   margin-top: 5px;
-    background: ${secondaryColor};
+    margin-top: 5px;
+    background: ${secondaryColor}; 
     position: relative;
+    /* will-change: transform, width, height, opacity; */
+  /* padding: 15px; */
 `;
 
 

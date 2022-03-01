@@ -7,8 +7,7 @@ import { userReducer } from 'plugins';
 
 const persistConfig = {
   key: 'root',
-  storage,
-  whitelist: ['user'],
+  storage
 };
 
 export const history = createBrowserHistory();

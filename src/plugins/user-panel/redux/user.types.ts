@@ -13,6 +13,8 @@ interface BoxPosition {
 export interface User {
   id: number;
   position : BoxPosition;
+  height: number;
+  width: number;
 };
 
 export type AddUser = TotalAction<'ADD_USER',User>;

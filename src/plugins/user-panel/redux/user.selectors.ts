@@ -23,12 +23,16 @@ const getNewUserId = (users:User[]):number => {
   return users[users.length - 1]?.id + 1;
 };
 
+
+
 const createNewUser = (users:User[]):User => ({
   id: getNewUserId(users),
   position: {
     x: 0,
     y: 0,
-  }
+  },
+  height: 800,
+  width: 250,
 });
 
 
