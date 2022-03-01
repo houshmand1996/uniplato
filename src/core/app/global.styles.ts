@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 		background-color: ${primaryColor}; 
 		font-family: 'Overlock', cursive;
 		overflow-x: hidden;
-		padding: 20px 80px;
+		/* padding: 20px 80px; */
 		@media screen and (max-width: 800px) {
 			padding: 10px;
 			/* width: calc(100% - 20px); */

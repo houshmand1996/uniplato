@@ -17,17 +17,11 @@ export const HeaderContainer = styled.div`
 export const LogoContainer = styled.div`
   height: 100%;
   width: auto;
-  @media screen and (max-width: 800px) {
-    width: 50px;
-  }
+  display: flex;
+  align-items: center;
 `;
 
 
 
 export const Logo = styled.a`
-  height: 100%;
-  width: 70px;
-  @media screen and (max-width: 800px) {
-    width: 50px;
-  }
 `;
