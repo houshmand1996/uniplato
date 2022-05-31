@@ -1,9 +1,10 @@
-import { GlobalStyle } from './global.styles';
-
+import { Header, Main , GlobalStyle } from 'core';
+import './app.css';
 export const App = () => (
   <>
     <GlobalStyle />
-    <h1> Hello  world  </h1>
+    <Header />
+    <Main />
   </>
 );
 
